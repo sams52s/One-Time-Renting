@@ -1,0 +1,54 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>60</x><y>97</y><w>120</w><h>180</h></coordinates><panel_attributes>Customer 
+--
+ID{String}
+Password{String}
+Details {String}
+--
+/-Login()/
+/-Add Item()/
+/-Place Order()/
+/-Cancel order()/
+/-Make Payment()/
+/-Return Item()/
+/-Exit()/
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>107</y><w>100</w><h>120</h></coordinates><panel_attributes>Item
+--
+ID{String}
+Name{String}
+--
+
+/+addToCart()/
+/+Make bill()/
+/+Hestory()/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>800</x><y>107</y><w>120</w><h>170</h></coordinates><panel_attributes>Owner
+--
+ID{String}
+Password{String}
+Details {String}
+--
+/-Login()/
+/-Give Rent()/
+/-Receive Payment()/
+/-Receive Item()/
+/-Exit()/
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>148</y><w>280</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..1
+m2=0..n
+Order </panel_attributes><additional_attributes>10;20;260;20</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>149</y><w>300</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+Give Rent</panel_attributes><additional_attributes>10;20;280;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>297</y><w>140</w><h>110</h></coordinates><panel_attributes>Admin
+--
+ID{String}
+Password{String}
+--
+/-Login Verification()/
+/-Payment Verification()/
+/-Item Verification()/
+/-Exit()/
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>270</y><w>350</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;10;10;90;330;90</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>270</y><w>350</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>310;10;310;80;10;80</additional_attributes></element></diagram>
