@@ -1,8 +1,8 @@
-<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>60</x><y>97</y><w>120</w><h>180</h></coordinates><panel_attributes>Customer 
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>95</y><w>120</w><h>180</h></coordinates><panel_attributes>Customer 
 --
-ID{String}
-Password{String}
-Details {String}
+-ID{String}
+-Password{String}
+-Details {String}
 --
 /-Login()/
 /-Add Item()/
@@ -10,18 +10,21 @@ Details {String}
 /-Cancel order()/
 /-Make Payment()/
 /-Return Item()/
+/-History()/
 /-Exit()/
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>107</y><w>100</w><h>120</h></coordinates><panel_attributes>Item
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>105</y><w>100</w><h>120</h></coordinates><panel_attributes>Item
 --
-ID{String}
-Name{String}
+-ID{String}
+-Name{String}
 --
 
-/+addToCart()/
-/+Make bill()/
-/+Hestory()/
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>800</x><y>107</y><w>120</w><h>170</h></coordinates><panel_attributes>Owner
+/-addToCart()/
+/+ShowCart()/
+/-Make bill()/
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>105</y><w>120</w><h>170</h></coordinates><panel_attributes>Owner
 --
 ID{String}
 Password{String}
@@ -33,13 +36,13 @@ Details {String}
 /-Receive Item()/
 /-Exit()/
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>148</y><w>280</w><h>50</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>110</x><y>146</y><w>280</w><h>50</h></coordinates><panel_attributes>lt=-
 m1=0..1
 m2=0..n
-Order </panel_attributes><additional_attributes>10;20;260;20</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>149</y><w>300</w><h>50</h></coordinates><panel_attributes>lt=-
+Order </panel_attributes><additional_attributes>10;20;260;20</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>147</y><w>300</w><h>50</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-Give Rent</panel_attributes><additional_attributes>10;20;280;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>297</y><w>140</w><h>110</h></coordinates><panel_attributes>Admin
+Give Rent</panel_attributes><additional_attributes>10;20;280;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>295</y><w>140</w><h>120</h></coordinates><panel_attributes>Admin
 --
 ID{String}
 Password{String}
@@ -49,6 +52,10 @@ Password{String}
 /-Item Verification()/
 /-Exit()/
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>270</y><w>350</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
-m1=0..n</panel_attributes><additional_attributes>10;10;10;90;330;90</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>270</y><w>350</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
-m1=0..n</panel_attributes><additional_attributes>310;10;310;80;10;80</additional_attributes></element></diagram>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>267</y><w>360</w><h>110</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1
+</panel_attributes><additional_attributes>320;10;320;80;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>40</x><y>267</y><w>340</w><h>120</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1
+</panel_attributes><additional_attributes>10;10;10;90;320;90</additional_attributes></element></diagram>
